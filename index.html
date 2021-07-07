@@ -26,28 +26,28 @@
   <section id="title">
     <div class="" id="background-gradient">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top col-md-12" id="mainNav">
         <div class="container-fluid">
           <a class="navbar-brand"><img src="images/logos/1.png" onmouseover="this.src='images/logos/2.png'" onmouseout="this.src='images/logos/1.png'" alt="Logo" id="logo-image"></a>
 
-          <button style="color:black; border:2px solid black;" class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation">
-            Menu<span class="navbar-toggler-icon"></span>
+          <button style="color:black; border:2px solid black; width:15vh;font-size:2vh;  margin-right:5%;" class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> Menu
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
+          <div class="collapse navbar-collapse " id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item ">
-                <a class="nav-link" href="#educaion-section" style="color:#2a2b2b;"><i class="fas fa-university"></i> Education</a>
+                <a class="nav-link" href="#educaion-section" style="color:#2a2b2b;font-size:3vh; "><i class="fas fa-university"></i> Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills-section" style="color:#2a2b2b;"><i class="fas fa-chart-pie"></i> Skills</a>
+                <a class="nav-link" href="#skills-section" style="color:#2a2b2b;font-size:3vh;"><i class="fas fa-chart-pie"></i> Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects-section" style="color:#2a2b2b;"><i class="fas fa-file-code"></i> Projects</a>
+                <a class="nav-link" href="#projects-section" style="color:#2a2b2b;font-size:3vh;"><i class="fas fa-file-code"></i> Projects</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#contact-section" style="color:#2a2b2b;"><i class="fas fa-mobile-alt"></i> Contact</a>
+                <a class="nav-link" href="#contact-section" style="color:#2a2b2b;font-size:3vh;"><i class="fas fa-mobile-alt"></i> Contact</a>
               </li>
 
             </ul>
@@ -78,51 +78,48 @@
   <!-- about -->
   <div class="about" id="about">
 
-    <div class="container">
-      <div class="row">
-        <div class="" id="about-div">
-          <div class="about-image-div" style="float:left;">
-            <img src="images/logos/about.png" alt="image" id="about-img">
-          </div>
-          <div class="content-about" style="float:right;">
-            <h1 id="about-title">About me.</h1>
-            <p style="font-weight:500;">Love development, Competitive Programming and Solving Problems.
-              Like to solve real life Problems using jugaad(DIY).
-              <br>
-              <br>
-              I have a personality type of <a href="https://www.16personalities.com/profiles/3dd53e0f0c8b2">ISTJ-A</a>.
-              <br>
-              <br>
-              Playing electric Keyboard, Love watching Biographies and<br>
-              Studying Indian History are some of my other hobbies.
-            </p>
-          </div>
+    <div class="container-fluid">
+      <h1 id="heading"><i class="fas fa-user-tie fa-1x"></i> About</h1>
+      <div id="about-div">
+        <div class="about-image-div">
+          <img style="height: 75vh; width:38vh;" src="images/logos/about.png" alt="image" id="about-img">
         </div>
+        <div class="content-about">
 
+          <p style="font-weight:500;" class="content-about-para">Love development, Competitive Programming and Solving Problems.
+            Like to solve real life Problems using jugaad(DIY).
+            <br>
+            <br>
+            I have a personality type of <a href="https://www.16personalities.com/profiles/3dd53e0f0c8b2">ISTJ-A</a>.
+            <br>
+            Playing electric Keyboard, Love watching Biographies and<br>
+            Studying Indian History are some of my other hobbies.
+          </p>
+        </div>
       </div>
-
     </div>
 
   </div>
   <hr>
   <div id="educaion-section">
-    <h1 id="heading"><i class="fas fa-university fa-1x"></i> Education</h1>
-    <div class="container" id="school-section">
+    <h1 id="heading" style="margin-bottom:0;"><i class="fas fa-university fa-1x"></i> Education</h1>
+    <div class="container-fluid" id="school-section" style="padding:2% 2% 2% 2%;">
       <div class="row">
 
         <div class="col-lg-6">
-          <div class="school" id="school-animation">
+          <div class="school" id="school-animation" style="margin-left:3%;">
             <div class="school-div">
-              <img src="images/logos/school-logo.png" alt="logo" class="rounded mx-auto d-block" id="school-logo">
+              <img src="images/logos/school-logo.png" alt="logo" class="rounded mx-auto d-block" id="school-logo" style="margin-top:5%;">
               <h3 class="progress-title">Divine Life School</h3>
-              <p style="font-size:1rem;">Crucial Exams of my life secondary and Higher secondary I had given under this school.</p>
+              <p style="font-size:2vh;">Crucial Exams of my life secondary and Higher secondary I had given under this school.</p>
             </div>
 
             <div class="wrapper">
               <h3 class="progress-title">10th</h3>
-              <div class="progress-outer" style="margin-bottom: 8%;">
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped" style="width:91.71%;"></div>
+              <div class="progress-outer">
+
+                <div class="progress" id="experience-bar" style="height:1cm;">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="height:5vh; width:91.71%;border-radius: 5px;"></div>
                   <div class="progress-value"><span>91.71%</span></div>
                 </div>
               </div>
@@ -130,18 +127,20 @@
             <div class="wrapper">
               <h3 class="progress-title">12th</h3>
               <div class="progress-outer">
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped" style="width:60%;"></div>
-                  <div class="progress-value"><span>60%</span></div>
+
+                <div class="progress" id="experience-bar" style="height:1cm;">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="height:5vh; width:57%;border-radius: 5px;"></div>
+                  <div class="progress-value"><span>57.00%</span></div>
                 </div>
               </div>
             </div>
+
             <br>
             <hr>
 
             <div class="school-div" style="text-align:left;">
-              <h4 style="font-weight:500;">Student of</h4>
-              <p style="font-size:1.2rem;">Physics, Chemistry, Math & Computer Science</p>
+              <h4 style="font-weight:bolder;font-size:3.5vh;">Student of</h4>
+              <p style="font-size:2.5vh;">Physics, Chemistry, Math & Computer Science</p>
             </div>
           </div>
 
@@ -153,13 +152,14 @@
           })
         </script>
         <div class="col-lg-6" id="college-animation">
-          <div class="school" id="college">
-            <div class="school-div" style="margin-bottom:-8%;">
+          <div class="school" id="college" style="margin-left:3%;">
+            <div class="school-div" style="margin-bottom:-8%; margin-top:5%;">
               <img src="images/logos/uni.png" alt="logo" class="rounded mx-auto d-block" id="school-logo" style="width: 200px;height:90px;">
               <h3 class="progress-title">Indus University</h3>
-              <p style="font-size:1rem;">Currently pursuing my B.Tech degree with Electronics as minors.</p>
+              <p style="font-size:2vh;">Currently pursuing my B.Tech degree with Electronics as minors.</p>
             </div>
             <br>
+
             <div id="cgpa-marks-div" style="padding-top:5%;">
               <div id="cgpa-marks">8.71</div>
               <div id="cgpa-marks">9.24</div>
@@ -170,10 +170,18 @@
 
               <div id="cgpa">
 
-                <div class="sem-1" id="bar"></div>
-                <div class="sem-2" id="bar"></div>
-                <div class="sem-3" id="bar"></div>
-                <div class="sem-4" id="bar"></div>
+                <div class="sem-1" id="bar">
+                  <p id="sem">1</p>
+                </div>
+                <div class="sem-2" id="bar">
+                  <p id="sem">2</p>
+                </div>
+                <div class="sem-3" id="bar">
+                  <p id="sem">3</p>
+                </div>
+                <div class="sem-4" id="bar">
+                  <p id="sem">4</p>
+                </div>
                 <!--
                   <div class="sem-1"></div>
                   <div class="sem-1"></div>
@@ -182,26 +190,13 @@
               </div>
             </div>
 
-            <div id="cgpa-sem-div">
-
-              <div id="cgpa-marks-1">1</div>
-              <div id="cgpa-marks-1">2</div>
-              <div id="cgpa-marks-1">3</div>
-              <div id="cgpa-marks-1">4</div>
-              <div id="cgpa-marks-1">5</div>
-              <div id="cgpa-marks-1">6</div>
-              <div id="cgpa-marks-1">7</div>
-              <div id="cgpa-marks-1">8</div>
-
-            </div>
-            <div style="text-align:center; margin-left:-15%;"> <strong>Semesters</strong></div>
+            <div style="text-align:center; margin-left:-15%; padding-top:2%; font-size:2vh;"> <strong>Semesters</strong></div>
 
 
             <hr>
-            <br>
             <div class="school-div" style="text-align:left;">
-              <h4 style="font-weight:500;">Student of</h4>
-              <p style="font-size:1.2rem;">CSE with <strong>cumulative-GPA: 3.33/4.00</strong></p>
+              <h4 style="font-weight:bolder;font-size:3.5vh;">Student of</h4>
+              <p style="font-size:2.5vh;">CSE <br><strong>cumulative-GPA: 3.33/4.00</strong></p>
             </div>
           </div>
         </div>
@@ -213,315 +208,212 @@
       </div>
 
     </div>
+
     <!-- skills -->
-    <section id="skills-section">
-      <div id="skills-main">
-        <h1 id="heading"><i class="fas fa-puzzle-piece"></i>Skills</h1>
-        <div class="container-fluid" id="skills">
-          <div class="row">
-            <div class="col-lg-7 col-md-10" style="padding:5% 2% 20% 2%;">
-              <div class="skill">
-                <script type="text/javascript">
-                  function toggle_visibility(id1, id2, id3) {
-                    var e1 = document.getElementById(id1);
-                    var e2 = document.getElementById(id2);
-                    var e3 = document.getElementById(id3);
+    <div class="container-fluid" style="padding: 5% 5% 5% 5%;background: rgb(253,254,255);
+  background: linear-gradient(180deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 100%); ">
+      <h1 id="heading"><i class="fas fa-chart-pie"></i> Skills</h1>
 
-                    if (e1.style.display === "none") {
-                      e1.style.display = "block";
-                      e2.style.display = "none";
-                      e3.style.display = "none";
-                    }
+      <div class="row">
 
-
-                  }
-
-                  function visibility(id, value, pr, ex) {
-                    document.getElementById('experience-bar-progress').style.width = value;
-                    document.getElementById('project').innerHTML = "Numbers of Projects :  " + pr;
-                    document.getElementById('experience').innerHTML = "Years of Experience :  " + ex;
-
-                  }
-                </script>
-
-                <div class="topnav" id="myTopnav">
-                  <a onclick="toggle_visibility('languages','frameworks','libraries');"><i class="far fa-file-code"></i> Languages</a>
-                  <a onclick="toggle_visibility('frameworks','languages','libraries');"><i class="fas fa-laptop-code"></i> Frameworks</a>
-                  <a onclick="toggle_visibility('libraries','frameworks','languages');"><i class="fas fa-sitemap"></i></i> Libraries</a>
-
-                </div>
-
-                <div id="languages" class="scrollmenu" style="display: none" v1="0">
-                  <a onclick="visibility('progress-bar','70%','3','1');"><img src="images/languages/c.png" alt="c"></a>
-                  <a onclick="visibility('progress-bar','80%','5','2');"><img src="images/languages/cpp.png" alt="cpp"></a>
-                  <a onclick="visibility('progress-bar','70%','1','10');"><img src="images/languages/python.png" alt="python"></a>
-                  <a onclick="visibility('progress-bar','50%','1','2');"><img src="images/languages/js.png" alt="js"></a>
-                  <a onclick="visibility('progress-bar','85%','2','15');"><img src="images/languages/html.png" alt="html"></a>
-                  <a onclick="visibility('progress-bar','85%','2','15');"><img src="images/languages/css.png" alt="css"></a>
-                </div>
-                <div id="frameworks" class="scrollmenu" style="display: none" v2="0">
-                  <a onclick="visibility('progress-bar','70%','1/2','4');"> <img src="images/framework/flask.png" alt="flask"></a>
-                  <a onclick="visibility('progress-bar','60%','1/2','5');"><img src="images/framework/bootstrap.png" alt="bootstrap"></a>
-                  <hr>
-                  <h3 style="padding-left:2%;"> Learning this year</h3>
-                  <a nclick="visibility('progress-bar','0%','soon','soon');"><img src="images/framework/django.png" alt="django"></a>
-                </div>
-                <div id="libraries" class="scrollmenu" style="display: none" v3="0">
-                  <a onclick="visibility('progress-bar','80%','1','5');"> <img src="images/libraries/tkinter.jpeg" alt="tkinter"></a>
-                  <a onclick="visibility('progress-bar','70%','1','3');"><img src="images/libraries/turtle.jpeg" alt="turtle"></a>
-                  <a onclick="visibility('progress-bar','40%','1/2','2');"><img src="images/libraries/pandas.png" alt="pandas"></a>
-                  <a onclick="visibility('progress-bar','70%','1/2','1');"><img src="images/libraries/numpy.png" alt="numpy"></a>
-                </div>
-              </div>
-            </div>
-
-            <div id="card-section" style="margin-left:50px;">
-              <div class=" col-lg-12 col-md-12 col-sm-10 card  border-dark-5 rounded" style="width: 24rem;height: 100%;">
-                <div class="card-body">
-                  <h1 class="card-title" style="font-weight:900; text-shadow: 3px 3px #000000; letter-spacing: 3px; font-family: 'Montserrat', sans-serif;">Select a skill</h1>
-
-                  <p style=" color: white; text-shadow: 3px 3px #000000; ">This card will Let you know how much expertise i have in a particular selected field in a interactive way.</p>
-
-                  <div class="num-div">
-                    <h4 id="project-number">Numbers of Projects : ? </h4>
-                  </div>
-
-                  <div class="num-div">
-                    <h4 id="experience">Years of Experience : ? </h4>
-                  </div>
-
-
-                  <div class="experience-bar-div">
-                    <div class="progress" id="experience-bar">
-                      <div id="experience-bar-progress" class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="height:50px; border-radius: 5px;"></div>
-                    </div>
-                    <div class="bar-title">
-                      <div class="bar-detail" style="margin-left:-5%;"> <img src="images/bar-image/1.png" id="bar-img" style="margin-top: -50%;margin-left:-5%;">Beginner</div>
-                      <div class="bar-detail"><img src="images/bar-image/2.png" id="bar-img" style="margin-top: -30%; margin-left:10%;">Intermediate</div>
-                      <div class="bar-detail" style="margin-left:5%;"><img src="images/bar-image/3.png" id="bar-img" style="margin-top: -63%;">Expert</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <script type="text/javascript">
-                ScrollOut({
-                  targets: '#card-section'
-                })
-              </script>
-
-            </div>
-
+        <h1 style="color:red;font-size:2.5vh;">*scroll right to know more</h1>
+        <div class="scrollmenu">
+          <h1 style="color:white; font-family: 'Montserrat', sans-serif; font-size:4vh;">Skills I have till now.</h1>
+          <a> <img src="images/languages/c.jpeg"></a>
+          <a> <img src="images/languages/cpp.jpeg"></a>
+          <a> <img src="images/languages/python.jpeg"></a>
+          <a> <img src="images/languages/html.jpeg"></a>
+          <a> <img src="images/languages/css.jpeg"></a>
+          <a> <img src="images/framework/flask.png"></a>
+          <a> <img src="images/framework/bootstrap.jpeg"></a>
+          <a> <img src="images/libraries/tkinter.jpeg"></a>
+          <a> <img src="images/libraries/turtle.jpeg"></a>
+          <a> <img src="images/libraries/numpy.png"></a>
+          <a> <img src="images/libraries/pandas.png"></a>
+          <a> <img src="images/ide/sublime.png"></a>
+          <a> <img src="images/ide/pycharm.jpeg"></a>
+          <a> <img src="images/ide/atom.jpeg"></a>
+          <a> <img src="images/framework/django.png"></a>
+        </div>
+      </div>
+      <div class="skill-progress">
+        <div class="skill-bar">
+          <h1>C++(1st language for CP)</h1>
+          <div class="progress" style="height: 4vh; background-color:#adadad;border-radius:15px;">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 75%; height: 4vh; font-size:2.8vh;font-weight:900;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
           </div>
-
+        </div>
+        <div class="skill-bar">
+          <h1>Python</h1>
+          <div class="progress" style="height: 4vh; background-color:#adadad;border-radius:15px;">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 60%; height: 4vh; font-size:2.8vh; font-weight:900;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <h1>Flask</h1>
+          <div class="progress" style="height: 4vh; background-color:#adadad;border-radius:15px;">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 65%; height: 4vh; font-size:2.8vh; font-weight:900;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <h1>Arduino</h1>
+          <div class="progress" style="height: 4vh; background-color:#adadad;border-radius:15px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%; height: 4vh; font-size:2.8vh; font-weight:900;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
         </div>
       </div>
 
-    </section>
+    </div>
 
-    <!-- projects -->
-    <section id="projects-section">
-      <div id="projects-main">
-        <h1 id="heading"><i class="fas fa-code"></i> Projects</h1>
-        <div class="container-fluid" id="projects-div">
-          <div class="row">
-            <div class="col-lg-11 col-md-10">
 
-              <div>
-                <ul id="projects-title-list">
-                  <li id="ani-li">
-                    <div id="circle"><a onclick="toggle_visibility('carousel-projects','carousel-projects-1','carousel-projects-2');">Core Python</a> </div>
-                  </li>
-                  <li id="ani-li">
-                    <div id="circle"><a onclick="toggle_visibility('carousel-projects-1','carousel-projects','carousel-projects-2');">Flask</a></div>
-                  </li>
-                  <li id="ani-li">
-                    <div id="circle"><a onclick="toggle_visibility('carousel-projects-2','carousel-projects-1','carousel-projects');">Front-end only</a></div>
-                  </li>
-                </ul>
-              </div>
-              <!-- python -->
-              <div class="container-fluid " id="projects-container">
-                <section id="core-python">
-                  <div id="carousel-projects" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" align="center">
-                      <div class="carousel-item active" data-interval="5000" align="center">
-                        <img class="projects-img" src="images/core python/flash-card.png" alt="flash-card">
-                        <div class="carousel-caption d-none d-md-block" align="center">
-                          <h5>flash-card app using tkinter</h5>
-                          <p>It will help hindi speaker to learn english.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/flash_card">GitHub Link</a>
-                        </div>
-                      </div>
+    <!-- Projects-->
+    <div class="container-fluid" style="padding:2% 2% 2% 2%;background: rgb(253,254,255);
+background: linear-gradient(0deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 100%);">
 
-                      <div class="carousel-item" data-interval="2000" align="center">
-                        <img class="projects-img" src="images/core python/password.png" alt="password">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Password save/generate app using tkinter</h5>
-                          <p>It will help you to store important password.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/password_generator">GitHub Link</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-interval="2000" align="center">
-                        <img class="projects-img" src="images/core python/pomodoro.png" alt="pomodoro">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Pomodoro app using tkinter</h5>
-                          <p>It will help to follow Pomodoro technique.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/pomodoro">GitHub Link</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-interval="2000" align="center">
-                        <img class="projects-img" src="images/core python/text-morse.png" alt="dog-profile">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Text-Morse app using tkinter</h5>
-                          <p>It will help to convert text<=>Morse code.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/text_to_morse">GitHub Link</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-interval="2000" align="center">
-                        <img class="projects-img" src="images/core python/snake.png" alt="dog-profile">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Snake game using tkinter/turtle</h5>
-                          <p>Old is Gold. Nokia 3310 snake game.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/Game/snake">GitHub Link</a>
-                        </div>
-                      </div>
 
-                      <div class="carousel-item" data-interval="2000" align="center">
-                        <img class="projects-img" src="images/core python/us-states.png" alt="dog-profile">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Us-states game using tkinter/turtle</h5>
-                          <p>New is trendy geo guesser like game.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/Game/us_states">GitHub Link</a>
-                        </div>
-                      </div>
-
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel-projects" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" style="  background-color: black;   padding: 5% 5% 5% 5%; border-radius: 10%; width:30px; height:60px;" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-projects" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" style="  background-color: black;   padding: 5% 5% 5% 5%; border-radius: 10%;width:30px; height:60px;" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-
-                  </div>
-              </div>
-
-              <div class="container-fluid " id="projects-container">
-                <section id="flask">
-                  <div id="carousel-projects-1" class="carousel slide" data-ride="carousel" style="display:none;">
-                    <div class="carousel-inner" align="center">
-                      <div class="carousel-item active" data-interval="5000" align="center">
-                        <img class="projects-img" src="images/flask/blog.png" alt="flash-card">
-                        <div class="carousel-caption d-none d-md-block" align="center">
-                          <h5>Jainish Blog</h5>
-                          <p>website where i write blog on different topic.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/jainish_blog">GitHub Link</a>
-                          <a id="project-github-link" href="https://jainish-blog.herokuapp.com/">Website Link</a>
-
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" data-interval="2000" align="center">
-                        <img class="projects-img" src="images/flask/movies.png" alt="password">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Top 100 movies of all time</h5>
-                          <p>Everyone love watching movies and want to share there favurite movies.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/top-100-movies-of-all-time">GitHub Link</a>
-                          <a id="project-github-link" href="https://top-100-movies-of-all-time.herokuapp.com/">Website Link</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-interval="2000" align="center">
-                        <img class="projects-img" src="images/flask/api.png" alt="password">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Restful API</h5>
-                          <p>It will provide suicides data in json format.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/sucides_in_india_api">GitHub Link</a>
-                          <a id="project-github-link" href="https://documenter.getpostman.com/view/16370359/TzkyNfqH">Documentation</a>
-
-                        </div>
-                      </div>
-
-                      <a class="carousel-control-prev" href="#carousel-projects-1" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" style="  background-color: black;   padding: 5% 5% 5% 5%; border-radius: 10%; width:30px; height:60px;" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carousel-projects-1" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" style="  background-color: black;   padding: 5% 5% 5% 5%; border-radius: 10%;width:30px; height:60px;" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-
-                    </div>
-                  </div>
-              </div>
-
-              <div class="container-fluid " id="projects-container" id="front-end">
-                <section id="testimonials">
-                  <div id="carousel-projects-2" class="carousel slide" data-ride="carousel" style="display:none;">
-                    <div class="carousel-inner" align="center">
-                      <div class="carousel-item active" data-interval="5000" align="center">
-                        <img class="projects-img" src="images/front-end/tindog.png" alt="flash-card">
-                        <div class="carousel-caption d-none d-md-block" align="center">
-                          <h5>TinDog</h5>
-                          <p>Tinder for dog.</p>
-                          <a id="project-github-link" href="https://github.com/polonium31/TinDog-Start-Here">GitHub Link</a>
-                          <a id="project-github-link" href="https://polonium31.github.io/TinDog-Start-Here/">Webpage Link</a>
-                        </div>
-                      </div>
-
-                      <a class="carousel-control-prev" href="#carousel-projects-2" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" style="  background-color: black;   padding: 5% 5% 5% 5%; border-radius: 10%; width:30px; height:60px;" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carousel-projects-2" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" style="  background-color: black;   padding: 5% 5% 5% 5%; border-radius: 10%;width:30px; height:60px;" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-
-                    </div>
-                  </div>
-              </div>
+      <h1 id="heading"><i class="fas fa-file-code"></i> Projects</h1>
+      <p style="color:red; font-size:2.5vh; padding: 3% 0 0% 0;">*Blue color text are the link to the project.</p>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/flask/blog.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://jainish-blog.herokuapp.com/">Jainish Blog</a>
+              </h4>
+              <p class="card-text">website where i write blog on different topic.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/jainish_blog"> Github Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/flask/movies.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://top-100-movies-of-all-time.herokuapp.com/">Top 100 movies of all time</a>
+              </h4>
+              <p class="card-text">Everyone love watching movies and want to share there favurite movies.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/top-100-movies-of-all-time">GitHub Link</a>
 
             </div>
-
           </div>
-          <script type="text/javascript">
-            ScrollOut({
-              targets: '#ani-li'
-            })
-          </script>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/flask/api.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://documenter.getpostman.com/view/16370359/TzkyNfqH">Restful API</a>
+              </h4>
+              <p class="card-text">It will provide suicides data in json format.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/sucides_in_india_api">GitHub Link</a>
 
-    </section>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/core python/flash-card.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a>flash-card app using tkinter</a>
+              </h4>
+              <p class="card-text">It will help hindi speaker to learn english.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/flash_card">GitHub Link</a>
 
-    <!-- Contact -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/core python/password.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a>Password save/generate app using tkinter</a>
+              </h4>
+              <p class="card-text">It will help you to store important password.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/password_generator">GitHub Link</a>
 
-    <section id="contact-section">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/core python/pomodoro.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a>Pomodoro app using tkinter</a>
+              </h4>
+              <p class="card-text">It will help to follow Pomodoro technique.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/pomodoro">GitHub Link</a>
 
-      <div  style="justify-content:center; font-size:24px;">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/core python/text-morse.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a>Text-Morse app using tkinter</a>
+              </h4>
+              <p class="card-text">It will help to convert text<=>Morse code.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/text_to_morse">GitHub Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/core python/snake.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a>Snake game using tkinter/turtle</a>
+              </h4>
+              <p class="card-text">Old is Gold. Nokia 3310 snake game.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/Game/snake">GitHub Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/core python/us-states.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a>Us-states game using tkinter/turtle</a>
+              </h4>
+              <p class="card-text">New is trendy geo guesser like game.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/Game/us_states">GitHub Link</a>
 
-        <h1 id="heading"><i class="fas fa-mobile-alt"></i> Contact</h1>
-          <div class="form-div col-lg-8 col-md-10 col-sm-10 col-10">
-            <form style="margin-left:30%; margin-top: -15%;background-color: #D6E4F0; padding: 2% 2% 2% 2%; border:3px solid black; border-radius:20px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Name</label>
-                <input type="text" class="form-control" id="exampleInputEmail1">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary" >Submit</button>
-            </form>
-
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding-bottom: 1%;">
+          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+            <img class="card-img-top" src="images/front-end/tindog.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                <a>TinDog</a>
+              </h4>
+              <p class="card-text">Tinder for dog.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+
+      <!-- Contact -->
+      <div class="container">
+        <h1 id="heading"><i class="fas fa-user-tie"></i> Contact</h1>
+
+        <div style="display:inline;text-align: center; padding-top:10%;">
+          <div class="icon" style=" padding-left:20%;">
+            <a href="mailto:jenu3181@gmail.com"><i class="fas fa-envelope-open-text fa-7x"></i></a>
+          </div>
+          <div class="image-contact">
+              <img src="images/background/contact.png" style="width: 60vh;">
+          </div>
+        </div>
+        </div>
 </body>
 
 </html>
