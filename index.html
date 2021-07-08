@@ -23,12 +23,83 @@
 </head>
 
 <body style="background-color: #ffffff;">
+  <script type="text/javascript">
+    function change_to_dark(val) {
+
+      if(val===1)
+      {
+        document.body.style.backgroundColor = "#000f26";
+        document.getElementById('skills-section').style.background = "#000f26";
+        document.getElementById('projects-section').style.background = "#000f26";
+        document.getElementById('scrollmenu').style.backgroundImage = "url('images/background/star.gif')";
+
+        document.body.style.backgroundColor = "#000f26";
+        var el = document.querySelectorAll('#heading');
+
+        for (var i = 0; i < el.length; i++) {
+          var currentEl = el[i];
+          currentEl.style.color = 'white';
+        }
+
+        var el = document.querySelectorAll('#school-animation');
+
+        for (var i = 0; i < el.length; i++) {
+          var currentEl = el[i];
+          currentEl.style.backgroundColor = '#01255c';
+          currentEl.style.boxShadow="rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset";
+          currentEl.style.color = 'white';
+        }
+        var el = document.querySelectorAll('#card');
+
+        for (var i = 0; i < el.length; i++) {
+          var currentEl = el[i];
+          currentEl.style.backgroundColor = '#003ab8';
+          currentEl.style.boxShadow="rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset";
+          currentEl.style.color = 'white';
+        }
+        var el = document.querySelectorAll('#project-link');
+
+        for (var i = 0; i < el.length; i++) {
+          var currentEl = el[i];
+          currentEl.style.color = '#f05d70';
+        }
+
+        var el = document.querySelectorAll('#skill-bar');
+
+        for (var i = 0; i < el.length; i++) {
+          var currentEl = el[i];
+          currentEl.style.boxShadow="rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset";
+        }
+        var el = document.querySelectorAll('#bar');
+
+        for (var i = 0; i < el.length; i++) {
+          var currentEl = el[i];
+          currentEl.style.boxShadow="rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset";
+        }
+        var el = document.querySelectorAll('.progress-title');
+
+        for (var i = 0; i < el.length; i++) {
+          var currentEl = el[i];
+          currentEl.style.color = 'white';
+        }
+        document.getElementById('skill-progress').style.backgroundColor = '#01255c';
+        document.getElementById('skill-progress').style.color="white";
+        document.getElementById('skill-progress').style.boxShadow=" rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px";
+
+
+
+      }
+        else {
+              location.reload();
+        }
+    }
+  </script>
   <section id="title">
     <div class="" id="background-gradient">
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top col-md-12" id="mainNav">
         <div class="container-fluid">
-          <a class="navbar-brand"><img src="images/logos/1.png" onmouseover="this.src='images/logos/2.png'" onmouseout="this.src='images/logos/1.png'" alt="Logo" id="logo-image"></a>
+          <a onclick="change_to_dark(1)" class="navbar-brand" style="font-size:2vh; margin-top:1%;"><img src="images/logos/1.png" onmouseover="this.src='images/logos/2.png'" onmouseout="this.src='images/logos/1.png'" alt="Logo" id="logo-image"></a>
 
           <button style="color:black; border:2px solid black; width:15vh;font-size:2vh;  margin-right:5%;" class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,9 +125,10 @@
           </div>
         </div>
       </nav>
-
+      <a style="padding:1% 0 1% 2%;font-size:1.5vh;"> Tap for dark mode</a>
       <!-- profile -->
       <div class="row" id="profile">
+
         <div class="col-lg-6 ">
 
           <h6 id="intro">Welcome to my Portfolio website</h6>
@@ -72,13 +144,19 @@
           </ul>
 
         </div>
+
       </div>
-    </div>
+      <div>
+
+      </div>
+
   </section>
   <!-- about -->
+
   <div class="about" id="about">
 
     <div class="container-fluid">
+      <br>
       <h1 id="heading"><i class="fas fa-user-tie fa-1x"></i> About</h1>
       <div id="about-div">
         <div class="about-image-div">
@@ -110,7 +188,7 @@
           <div class="school" id="school-animation" style="margin-left:3%;">
             <div class="school-div">
               <img src="images/logos/school-logo.png" alt="logo" class="rounded mx-auto d-block" id="school-logo" style="margin-top:5%;">
-              <h3 class="progress-title" >Divine Life School</h3>
+              <h3 class="progress-title">Divine Life School</h3>
               <p style="font-size:2vh;">Crucial Exams of my life secondary and Higher secondary I had given under this school.</p>
             </div>
 
@@ -152,7 +230,7 @@
           })
         </script>
         <div class="col-lg-6" id="college-animation">
-          <div class="school" id="college" style="margin-left:3%;">
+          <div class="school" id="school-animation" style="margin-left:3%;">
             <div class="school-div" style="margin-bottom:-8%; margin-top:5%;">
               <img src="images/logos/uni.png" alt="logo" class="rounded mx-auto d-block" id="school-logo" style="width: 200px;height:90px;">
               <h3 class="progress-title">Indus University</h3>
@@ -217,7 +295,7 @@
       <div class="row">
 
         <h1 style="color:red;font-size:2vh;">*scroll right to know more</h1>
-        <div class="scrollmenu">
+        <div class="scrollmenu" id="scrollmenu">
           <h1 style="color:white; font-family: 'Montserrat', sans-serif; font-size:3.5vh;font-family: 'Montserrat', sans-serif;">Skills I have till now.</h1>
           <a> <img src="images/languages/c.jpeg"></a>
           <a> <img src="images/languages/cpp.jpeg"></a>
@@ -236,26 +314,26 @@
           <a> <img src="images/framework/django.png"></a>
         </div>
       </div>
-      <div class="skill-progress">
-        <div class="skill-bar">
+      <div class="skill-progress" id="skill-progress">
+        <div class="skill-bar" id="skill-bar">
           <h2>C++(1st language for CP)</h2>
           <div class="progress" style="height: 4vh; background-color:#adadad;border-radius:15px;">
             <div class="progress-bar bg-success" role="progressbar" style="width: 75%; height: 4vh; font-size:2.8vh;font-weight:900;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
           </div>
         </div>
-        <div class="skill-bar">
+        <div class="skill-bar" id="skill-bar">
           <h2>Python</h2>
           <div class="progress" style="height: 4vh; background-color:#adadad;border-radius:15px;">
             <div class="progress-bar bg-info" role="progressbar" style="width: 60%; height: 4vh; font-size:2.8vh; font-weight:900;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
           </div>
         </div>
-        <div class="skill-bar">
+        <div class="skill-bar" id="skill-bar">
           <h2>Flask</h2>
           <div class="progress" style="height: 4vh; background-color:#adadad;border-radius:15px;">
             <div class="progress-bar bg-warning" role="progressbar" style="width: 65%; height: 4vh; font-size:2.8vh; font-weight:900;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
           </div>
         </div>
-        <div class="skill-bar">
+        <div class="skill-bar" id="skill-bar">
           <h2>Arduino</h2>
           <div class="progress" style="height: 4vh; background-color:#adadad;border-radius:15px;">
             <div class="progress-bar bg-danger" role="progressbar" style="width: 50%; height: 4vh; font-size:2.8vh; font-weight:900;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
@@ -267,19 +345,19 @@
 
 
     <!-- Projects-->
-    <div id="projects-section"class="container-fluid" style="padding:2% 2% 2% 2%;background: rgb(253,254,255);
+    <div id="projects-section" class="container-fluid" style="padding:2% 2% 2% 2%;background: rgb(253,254,255);
 background: linear-gradient(0deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 100%);">
 
 
       <h1 id="heading"><i class="fas fa-file-code"></i> Projects</h1>
-      <p style="color:red; font-size:2.5vh; padding: 3% 0 0% 0;">*Blue color text are the link to the project.</p>
+      <p style="color:red; font-size:2.5vh; padding: 3% 0 0% 0;">*Blue/red color text are the link to the project.</p>
       <div class="row">
-        <div class="col-lg-4 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
-          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+        <div class="col-lg-4 col-sm-12 mb-4" style="padding: 5% 2% 0% 2%;">
+          <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/flask/blog.png" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a href="https://jainish-blog.herokuapp.com/">Jainish Blog</a>
+                <a id="project-link" href="https://jainish-blog.herokuapp.com/">Jainish Blog</a>
               </h4>
               <p class="card-text">website where i write blog on different topic.</p>
               <a id="project-github-link" href="https://github.com/polonium31/jainish_blog"> Github Link</a>
@@ -287,11 +365,11 @@ background: linear-gradient(0deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 10
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
-          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+          <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/flask/movies.png" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a href="https://top-100-movies-of-all-time.herokuapp.com/">Top 100 movies of all time</a>
+                <a id="project-link"  href="https://top-100-movies-of-all-time.herokuapp.com/">Top 100 movies of all time</a>
               </h4>
               <p class="card-text">Everyone love watching movies and want to share there favurite movies.</p>
               <a id="project-github-link" href="https://github.com/polonium31/top-100-movies-of-all-time">GitHub Link</a>
@@ -300,11 +378,11 @@ background: linear-gradient(0deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 10
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
-          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+          <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/flask/api.png" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a href="https://documenter.getpostman.com/view/16370359/TzkyNfqH">Restful API</a>
+                <a id="project-link"  href="https://documenter.getpostman.com/view/16370359/TzkyNfqH">Restful API</a>
               </h4>
               <p class="card-text">It will provide suicides data in json format.</p>
               <a id="project-github-link" href="https://github.com/polonium31/sucides_in_india_api">GitHub Link</a>
@@ -313,11 +391,11 @@ background: linear-gradient(0deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 10
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
-          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+          <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/core python/password.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a>Password save/generate app using tkinter</a>
+                <a id="project-link"  >Password save/generate app using tkinter</a>
               </h4>
               <p class="card-text">It will help you to store important password.</p>
               <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/password_generator">GitHub Link</a>
@@ -326,11 +404,11 @@ background: linear-gradient(0deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 10
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
-          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+          <div class="card h-100"  id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/core python/us-states.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a>Us-states game using tkinter/turtle</a>
+                <a id="project-link" >Us-states game using tkinter/turtle</a>
               </h4>
               <p class="card-text">New is trendy geo guesser like game.</p>
               <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/Game/us_states">GitHub Link</a>
@@ -339,13 +417,15 @@ background: linear-gradient(0deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 10
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
-          <div class="card h-100" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
+          <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/front-end/tindog.png" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a>TinDog</a>
+                <a  id="project-link" href="https://polonium31.github.io/TinDog-Start-Here/">TinDog</a>
               </h4>
               <p class="card-text">Tinder for dog.</p>
+              <a id="project-github-link" href="https://github.com/polonium31/TinDog-Start-Here">GitHub Link</a>
+
             </div>
           </div>
         </div>
@@ -360,10 +440,10 @@ background: linear-gradient(0deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 10
             <a href="mailto:jenu3181@gmail.com"><i class="fas fa-envelope-open-text fa-7x"></i></a>
           </div>
           <div class="image-contact">
-              <img src="images/background/contact.png" style="width: 60vh;">
+            <img src="images/background/contact.png" style="width: 60vh;">
           </div>
         </div>
-        </div>
+      </div>
 </body>
 
 </html>

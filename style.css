@@ -158,7 +158,6 @@ html, body {
 @keyframes flash {
   transform: rotate(180deg);
 }
-
 /* about */
 .about {
   padding-bottom: 5vh;
