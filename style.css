@@ -45,7 +45,7 @@ html, body {
 
 #mainNav {
   position: absolute;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Courier Prime', monospace;
 }
 
 #mainNav .navbar-toggler {
@@ -91,6 +91,7 @@ html, body {
 #intro {
   font-size: 2.7vh;
   color: #787878;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #name {
@@ -125,6 +126,7 @@ html, body {
 #descri {
   font-size: 3.5vh;
   color: #404040;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #social-media-icon {
@@ -165,7 +167,7 @@ html, body {
 
 #about-title {
   text-align: center;
-  font-family: 'Courier Prime', monospace;
+  font-family: 'Montserrat', sans-serif;
   padding: 5%;
   font-size: 4vh;
 }
@@ -196,7 +198,9 @@ html, body {
 }
 
 .content-about p {
-  font-size: 4vh;
+  font-size: 5.5vw;
+  color: #807f7e;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 400px) {
@@ -471,6 +475,7 @@ html, body {
 .sem-4 {
   height: 90.64%;
 }
+
 /* skills */
 div.scrollmenu {
   overflow: auto;
@@ -478,7 +483,7 @@ div.scrollmenu {
   border: 2px solid black;
   border-radius: 10px;
   padding: 2% 2% 2% 2%;
-  background-image:url('images/background/snow.gif');
+  background-image: url('images/background/snow.gif');
 }
 
 div.scrollmenu a {
@@ -488,60 +493,59 @@ div.scrollmenu a {
   padding: 14px;
   text-decoration: none;
 }
-.scrollmenu a img
-{
-  width: 15vh;
-  height: 15vh;
-  border-radius: 10px;
-  border: 2px solid gray;
 
+.scrollmenu a img {
+  width: 13vh;
+  height: 13vh;
+  border-radius: 20%;
+  border: 2px solid gray;
+  padding: 10% 10% 10% 10%;
 }
+
 div.scrollmenu a:hover {
   background-color: white;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
- /* project */
- .skill-progress
- {
-   background-color: #fffff5;
-   border: 2px solid black;
-   border-radius: 10px;
-   padding: 5% 5% 5% 5%;
-   margin: 5% 5% 5% 5%;
- }
- .skill-bar
- {
-   padding: 2% 0 2% 0;
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   border-radius: 10px;
-   padding: 2% 2% 2% 2%;
-   margin: 2% 0 2% 0;
- }
- .skill-bar h1
- {
-   font-size: 4vh;
-font-family: 'Montserrat', sans-serif;
- }
 
-.card-body a
-{
-    font-size: 3.5vh;
-    font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
+/* project */
+.skill-progress {
+  background-color: #fffff5;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5% 5% 5% 5%;
+  margin: 5% 5% 5% 5%;
 }
-.card-body p
-{
+
+.skill-bar {
+  padding: 2% 0 2% 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 2% 2% 2% 2%;
+  margin: 2% 0 2% 0;
+}
+
+.skill-bar h1 {
+  font-size: 4vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-body a {
+  font-size: 3.5vh;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-body p {
   font-size: 2.5vh;
   font-family: 'Montserrat', sans-serif;
 }
-.card-img-top
-{
+
+.card-img-top {
   width: 60vh;
   height: 45vh;
 }
 
-#project-github-link
-{
+#project-github-link {
   font-size: 3vh;
   font-weight: 400;
   border: 1px solid black;
@@ -550,12 +554,12 @@ font-family: 'Montserrat', sans-serif;
   padding: 1% 1% 1% 1%;
   color: black;
   background-color: #D6E4F0;
-
 }
-#project-github-link:hover
-{
+
+#project-github-link:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .form-div {
   padding: 5% 5% 5% 5%;
   margin: 5% 5% 5% 5%;
