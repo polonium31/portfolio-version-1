@@ -577,77 +577,43 @@ div.scrollmenu a:hover {
   padding-bottom: 5%;
 }
 
-
-/* css for toggel */
-.switch {
+.label {
+  width: 60px;
+  height: 26px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
   position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 40px;
+  transform: scale(1.5);
+/* box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px; */
+box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
 }
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: darkblue;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 32px;
-  width: 34px;
-  left: 4px;
-  bottom: 4px;
+.ball {
+  width: 20px;
+  height: 20px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2a83f7;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #fffdd1;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(40px);
-  -ms-transform: translateX(40px);
-  transform: translateX(40px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-
-}
-
-.slider.round:before {
+  position: absolute;
+  top: 3px;
+  left: 2px;
   border-radius: 50%;
-  background-color: #fffdd1;
-}
-
-.switch-div
-{
+  transition: transform 0.2s linear;
 
 }
-.s1
-{
-    width: 10vh;
+.checkbox:checked + .label .ball{
+  transform: translateX(35px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
 }
