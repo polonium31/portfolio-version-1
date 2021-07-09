@@ -28,7 +28,11 @@
 <body style="background-color: #ffffff;">
   <script type="text/javascript">
     function change_to_dark() {
+      
+       if(document.body.style.backgroundColor==='rgb(255, 255, 255)'){
         document.body.style.backgroundColor = "#000f26";
+        document.getElementById('title').style.background = "#000f26"; 
+        document.getElementById('name').style.color = "#fff"; 
         document.getElementById('skills-section').style.background = "#000f26";
         document.getElementById('projects-section').style.background = "#000f26";
         document.getElementById('scrollmenu').style.backgroundImage = "url('images/background/star.gif')";
@@ -40,6 +44,14 @@
           var currentEl = el[i];
           currentEl.style.color = 'white';
         }
+
+        var el = document.querySelectorAll('.nav-link');
+
+        for (var i = 0; i < el.length; i++) {
+          var currentEl = el[i];
+          currentEl.style.color = '#949494';
+        }
+        
 
         var el = document.querySelectorAll('#school-animation');
 
@@ -57,6 +69,14 @@
           currentEl.style.boxShadow="rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset";
           currentEl.style.color = 'white';
         }
+
+        var el = document.querySelectorAll('#social-media-icon');
+
+        for (var i = 0; i < el.length; i++) {
+          var currentEl = el[i];
+         currentEl.style.boxShadow="rgba(255, 255, 255, 0.35) 0px 5px 15px";
+        }
+
         var el = document.querySelectorAll('#project-link');
 
         for (var i = 0; i < el.length; i++) {
@@ -86,7 +106,10 @@
         document.getElementById('skill-progress').style.color="white";
         document.getElementById('skill-progress').style.boxShadow=" rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px";
 
-
+      }
+      else {
+         location.reload()
+      }
 
 
     }
@@ -96,7 +119,7 @@
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top col-md-12" id="mainNav">
         <div class="container-fluid">
-          <a onclick="change_to_dark(1)" class="navbar-brand" style="font-size:2vh; margin-top:1%;"><img src="images/logos/1.png" onmouseover="this.src='images/logos/2.png'" onmouseout="this.src='images/logos/1.png'" alt="Logo" id="logo-image"></a>
+          <a  class="navbar-brand" style="font-size:2vh; margin-top:1%;"><img src="images/logos/1.png" onmouseover="this.src='images/logos/2.png'" onmouseout="this.src='images/logos/1.png'" alt="Logo" id="logo-image"></a>
 
           <button style="color:black; border:2px solid black; width:15vh;font-size:2vh;  margin-right:5%;" class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,7 +145,6 @@
           </div>
         </div>
       </nav>
-      <a style="padding:1% 0 1% 2%;font-size:1.5vh;"> Tap for dark mode</a>
       <!-- profile -->
       <div class="row" id="profile">
 
@@ -149,8 +171,13 @@
 
   </section>
 
-  <div class="" style="float:right; margin: 2% 2% 2% 2%; border:5px solid lightgray; border-radius:10px;">
-    <input type="checkbox" id="clickMe" onclick="change_to_dark()"  data-toggle="toggle" data-onstyle="danger" data-offstyle="dark" data-on="<i class='fa fa-sun fa-2x'></i>" data-off="<i class='fa fa-moon fa-2x'></i>">
+  
+  <div style="padding:2% 2% 2% 2%;">
+    <label class="switch" style="float:right;">
+      <input type="checkbox" onclick="change_to_dark()">
+      <span class="slider round"></span>
+    </label>
+   
   </div>
   <!-- about -->
 
