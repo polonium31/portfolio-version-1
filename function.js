@@ -13,6 +13,9 @@ function change_to_dark() {
     document.getElementById("name").style.animation = " glow 1s ease-in-out infinite alternate";
     document.getElementById('hamburger').style.color = "white";
 
+    document.getElementById('copyright').style.color = "#b8b8ba";
+
+
 
     var el = document.querySelectorAll('#heading');
 
