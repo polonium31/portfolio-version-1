@@ -14,6 +14,8 @@ function change_to_dark() {
     document.getElementById('hamburger').style.color = "white";
 
     document.getElementById('copyright').style.color="white";
+    document.getElementById('gform').style.color="#c9c8c7";
+    document.getElementById('contact-form').style.boxShadow="rgba(255, 255, 255, 0.05) 0px 1px 0px, rgba(255, 255, 255, 0.1) 0px 0px 8px";
 
 
 
