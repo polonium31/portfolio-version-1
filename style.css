@@ -572,9 +572,11 @@ div.scrollmenu a:hover {
   margin: 5% 5% 5% 5%;
 }
 
-#contact-form {
-  justify-content: center;
-  padding-bottom: 5%;
+@media screen and (max-width: 400px) {
+  .form {
+    width: 100%;
+
+  }
 }
 
 .label {
