@@ -99,9 +99,16 @@ function change_to_dark() {
   to {
     text-shadow: 0 0 4px #fff, 0 0 6px #ff4da6, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6;
  `, css.cssRules.length);
-  } else {
+  }
+  else {
     location.reload()
   }
-
-
+  document.getElementById('gform').onload = function(){
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        document.location = "https://polonium31.github.io/Portfolio/";
+    }
+}
 }

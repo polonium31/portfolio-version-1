@@ -20,7 +20,7 @@
   <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
-   <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"> </script>
   <script type="text/javascript" src="function.js"></script>
   <script src="scroll-out.js"></script>
 
@@ -88,11 +88,11 @@
   <div class="switch-div" style="padding:2% 2% 2% 2%; display:flex;float:right;">
     <input type="checkbox" class="checkbox" id="checkbox" onclick="change_to_dark()">
 
-      <label for="checkbox" class="label" >
-        <i class="fas fa-moon"></i>
-    <i class='fas fa-sun'></i>
-        <div class='ball'></div>
-      </label>
+    <label for="checkbox" class="label">
+      <i class="fas fa-moon"></i>
+      <i class='fas fa-sun'></i>
+      <div class='ball'></div>
+    </label>
 
 
   </div>
@@ -380,19 +380,39 @@ background: linear-gradient(0deg, rgba(253,254,255,1) 0%, rgba(128,200,255,1) 10
       <div class="container-fluid" id="contact-section">
         <h1 id="heading"><i class="fas fa-user-tie"></i> Contact</h1>
 
-        <div style="display:inline;text-align: center; padding-top:10%; overflow-y: hidden;">
-          <div class="icon">
-            <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSezpysHwxUNtY2pIhBp66MyRSQxwtoMwcLa1QTBoPKlLMWKYA/viewform?embedded=true" width="700" scrolling="no" height="870" frameborder="0" marginheight="0" marginwidth="0" >Loading…</iframe>
+        <div style="display:inline;padding-top:10%; overflow-y: hidden;">
+          <div class="contact-form col-lg-8 col-md-10" style="margin:5%; font-size:3vh; font-weight: 600; border:1px solid black; margin-left:12%; border-radius:10px; padding:2% 2% 2% 2%;">
+            <form  id="gform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfrLlDlAtrNJzHMiKzUGBjKhxDTICmlPiZAOrf6WeHtJSgGIg/formResponse" method="post">
+              <div class="form-group">
+                <label for="Email">Email address</label>
+                <input  style="font-size:2vh;" type="email" name="entry.874479792" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" required>
+              </div>
+              <div class="form-group">
+                <label for="Name">Name</label>
+                <input style="font-size:2vh;" type="text" name="entry.1799650041" class="form-control" id="exampleInputName" aria-describedby="emailHelp" required>
+              </div>
+
+              <div class="form-group">
+                <label for="Input1">Message</label>
+                 <textarea style="font-size:2vh;" name="entry.82039153" class="form-control" id="exampleFormControlTextarea" rows="3" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="Input2">Any suggestion</label>
+                 <textarea  style="font-size:2vh;" name="entry.68576554" class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+                </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
           <div class="image-contact">
-            <img src="images/background/contact.png" style="width: 60vh;">
+            <img src="images/background/contact.png" style="width:60vw;">
           </div>
         </div>
       </div>
-
-    <footer>
-      <h3 id="copyright" style="text-align:center; color:#163172; font-size:2vh; font-family: 'Courier Prime', monospace;"><i class="fas fa-code"></i> by  jainish patel</h3>
-    </footer>
+<br>
+      <footer>
+        <h3 id="copyright" style="text-align:center; color:#163172; font-size:2vh; font-family: 'Courier Prime', monospace;"><i class="fas fa-code"></i> by jainish patel</h3>
+      </footer>
 </body>
 
 </html>

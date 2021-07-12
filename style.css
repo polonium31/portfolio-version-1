@@ -562,21 +562,8 @@ div.scrollmenu a:hover {
   color: black;
   background-color: #D6E4F0;
 }
-
 #project-github-link:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.form-div {
-  padding: 5% 5% 5% 5%;
-  margin: 5% 5% 5% 5%;
-}
-
-@media screen and (max-width: 400px) {
-  .form {
-    width: 100%;
-
-  }
 }
 
 .label {
