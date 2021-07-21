@@ -127,7 +127,7 @@ opacity: 0;
   text-decoration: none;
 }
 
-#name-link:hover {
+#name:hover {
   text-shadow: 2px 2px 5px red;
 }
 
