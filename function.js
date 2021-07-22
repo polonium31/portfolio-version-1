@@ -113,4 +113,7 @@ function change_to_dark() {
         document.location = "https://polonium31.github.io/Portfolio/";
     }
 }
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 }
