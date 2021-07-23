@@ -109,7 +109,7 @@ html, body {
 {
   color: red;
   font-weight: 600;
-  font-size: 3vh;
+  font-size: 2vh;
     font-family: 'Courier Prime', monospace;
   -moz-animation: cssAnimation 0s ease-in 5s forwards;
     /* Firefox */
