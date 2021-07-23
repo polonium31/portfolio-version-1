@@ -116,4 +116,6 @@ function change_to_dark() {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+
 }
