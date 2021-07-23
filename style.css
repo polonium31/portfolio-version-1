@@ -111,13 +111,13 @@ html, body {
   font-weight: 600;
   font-size: 2vh;
     font-family: 'Courier Prime', monospace;
-  -moz-animation: cssAnimation 0s ease-in 5s forwards;
+  -moz-animation: cssAnimation 0s ease-in 8s forwards;
     /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 8s forwards;
     /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    -o-animation: cssAnimation 0s ease-in 8s forwards;
     /* Opera */
-    animation: cssAnimation 0s ease-in 5s forwards;
+    animation: cssAnimation 0s ease-in 8s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
