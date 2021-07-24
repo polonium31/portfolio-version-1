@@ -16,7 +16,7 @@ function change_to_dark() {
     document.getElementById('copyright').style.color="white";
     document.getElementById('gform').style.color="#c9c8c7";
     document.getElementById('contact-form').style.boxShadow="rgba(255, 255, 255, 0.05) 0px 1px 0px, rgba(255, 255, 255, 0.1) 0px 0px 8px";
-
+    document.getElementById('hamburger').style.borderColor="white";
 
 
     var el = document.querySelectorAll('#heading');
@@ -101,18 +101,14 @@ function change_to_dark() {
   to {
     text-shadow: 0 0 4px #fff, 0 0 6px #ff4da6, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6;
  `, css.cssRules.length);
+
   }
   else {
-    location.reload()
+  location.reload();
   }
-  document.getElementById('gform').onload = function(){
-    /*Execute on every reload on iFrame*/
-    load++;
-    if(load > 1){
-        /*Second reload is a submit*/
-        document.location = "https://polonium31.github.io/Portfolio/";
-    }
-}
+
+
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
