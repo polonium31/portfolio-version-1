@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
-html, body {
-  font-family: 'Montserrat', sans-serif;
+html,
+body {
+  font-family: "Montserrat", sans-serif;
   /* font-family: 'Courier Prime', monospace; */
   background-color: #fffefc;
   max-width: 100%;
@@ -13,7 +14,7 @@ html, body {
 #heading {
   text-align: center;
   margin-top: 5%;
-  font-family: 'Courier Prime', monospace;
+  font-family: "Courier Prime", monospace;
   font-weight: bold;
   font-size: 5vh;
 }
@@ -38,14 +39,14 @@ html, body {
 #title {
   /* background: rgb(54,209,220);
   background: linear-gradient(90deg, rgba(54,209,220,1) 0%, rgba(91,134,229,1) 100%); */
-  background: url('images/background/profile.jpeg');
+  background: url("images/background/profile.jpeg");
   width: 100vw;
   height: 100vh;
 }
 
 #mainNav {
   position: absolute;
-  font-family: 'Courier Prime', monospace;
+  font-family: "Courier Prime", monospace;
 }
 
 #mainNav .navbar-toggler {
@@ -57,17 +58,17 @@ html, body {
 }
 
 .navbar-toggler:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .nav-item {
   margin-left: 30px;
-  border-radius:10px;
+  border-radius: 10px;
 }
-.nav-link
-{
-  color:#2a2b2b;
-  font-size:2.2vh;
+.nav-link {
+  color: #2a2b2b;
+  font-size: 2.2vh;
 }
 
 .nav-item i {
@@ -80,12 +81,11 @@ html, body {
 .nav-item:hover {
   background: white;
   border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   opacity: 0.8;
   margin-left: 3px;
 }
-
-
 
 #profile {
   padding: 37vh 2rem 12rem 5rem;
@@ -100,57 +100,56 @@ html, body {
 #intro {
   font-size: 2.7vh;
   color: #787878;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #name {
   font-size: 11vh;
   font-weight: 600;
   color: #163172;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 1s;
 }
-#instruction
-{
+#instruction {
   color: red;
   font-weight: 600;
   font-size: 0.8cm;
-    font-family: 'Courier Prime', monospace;
+  font-family: "Courier Prime", monospace;
   -moz-animation: cssAnimation 0s ease-in 8s forwards;
-    /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 8s forwards;
-    /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 8s forwards;
-    /* Opera */
-    animation: cssAnimation 0s ease-in 8s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 8s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 8s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 8s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 @keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-    }
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
 }
 @-webkit-keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-    }
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
 }
 
 #name {
-animation: blinker time_in_seconds up_to_blink_time;
+  animation: blinker time_in_seconds up_to_blink_time;
 }
 @keyframes blinker {
-60% {
-opacity: 0;
-}
+  60% {
+    opacity: 0;
+  }
 }
 @keyframes fadeInAnimation {
   0% {
@@ -173,7 +172,7 @@ opacity: 0;
 #descri {
   font-size: 3.2vh;
   color: #404040;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #social-media-icon {
@@ -195,7 +194,7 @@ opacity: 0;
 
 @-webkit-keyframes flash {
   0% {
-    opacity: .4;
+    opacity: 0.4;
   }
 
   100% {
@@ -214,7 +213,7 @@ opacity: 0;
 
 #about-title {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 5%;
   font-size: 4vh;
 }
@@ -247,7 +246,7 @@ opacity: 0;
 .content-about p {
   font-size: 3vh;
   color: #807f7e;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 400px) {
@@ -357,7 +356,7 @@ opacity: 0;
   border: 2px solid #163172;
   border-radius: 50px;
   padding: 2rem 1rem 2rem 1rem;
-  background: #D6E4F0;
+  background: #d6e4f0;
   float: inherit;
   margin-bottom: 5%;
   margin-right: 5%;
@@ -366,7 +365,7 @@ opacity: 0;
 .school-div {
   text-align: center;
   padding: 5% 10% 5% 10%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #school-logo {
@@ -388,7 +387,7 @@ opacity: 0;
   font-weight: 700;
   color: #000;
   margin: 0 0 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .progress-outer {
@@ -416,7 +415,7 @@ opacity: 0;
   height: 15px;
   box-shadow: none;
   width: 0;
-  background-color: #1E56A0;
+  background-color: #1e56a0;
 }
 
 .progress .progress-value {
@@ -475,7 +474,9 @@ opacity: 0;
 }
 
 #bar:hover {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 #cgpa-marks-div {
@@ -530,14 +531,179 @@ opacity: 0;
 .sem-6 {
   height: 100%;
 }
+.sem-7 {
+  height: 90.7%;
+}
+
+/* Experience */
+#experience-section {
+  background: linear-gradient(270deg, #ffffff, #80c8ff, #3b87c1);
+  background-size: 800% 800%;
+  padding: 5% 0 5% 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  -webkit-animation: AnimationName 25s ease infinite;
+  -moz-animation: AnimationName 25s ease infinite;
+  -o-animation: AnimationName 25s ease infinite;
+  animation: AnimationName 25s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.timeline {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.exp-card {
+  position: relative;
+  max-width: 700px;
+}
+
+.exp-card:nth-child(even) {
+  padding: 30px 0 30px 30px;
+}
+.exp-card:nth-child(odd) {
+  padding: 30px 30px 30px 0;
+}
+.exp-card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid orangered;
+}
+
+.exp-card:nth-child(even)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+.exp-card:nth-child(odd)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.exp-card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+.exp-card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+.exp-card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+.exp-info {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 200;
+  border-radius: 10px;
+  padding: 10px;
+  background: #19315a;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.exp-title {
+  color: rgb(224, 68, 2);
+  position: relative;
+  padding: 2% 2% 0 2%;
+}
+.exp-sub-text-right {
+  text-align: right;
+  color: rgb(231, 127, 89);
+  position: relative;
+  padding-right: 2%;
+  padding-left: 3%;
+}
+.exp-sub-text-left {
+  color: rgb(231, 127, 89);
+  position: relative;
+  padding-right: 2%;
+  padding-left: 3%;
+}
+.exp-title::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  border: 3px solid orangered;
+}
+
+.exp-card:nth-child(odd) > .exp-info > .exp-title {
+  text-align: right;
+}
+
+.exp-card:nth-child(even) > .exp-info > .exp-title::before {
+  left: -55px;
+}
+
+.exp-card:nth-child(odd) > .exp-info > .exp-title::before {
+  right: -55px;
+}
+
 /* skills */
+#skills-section {
+  padding: 5% 5% 5% 5%;
+  background: rgb(253, 254, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(253, 254, 255, 1) 0%,
+    rgba(128, 200, 255, 1) 100%
+  );
+}
 div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
   border: 2px solid black;
   border-radius: 10px;
   padding: 2% 2% 2% 2%;
-  background-image: url('images/background/snow.gif');
+  background-image: url("images/background/snow.gif");
 }
 
 div.scrollmenu a {
@@ -562,6 +728,15 @@ div.scrollmenu a:hover {
 }
 
 /* project */
+#projects-section {
+  padding: 2% 2% 2% 2%;
+  background: rgb(253, 254, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 254, 255, 1) 0%,
+    rgba(128, 200, 255, 1) 100%
+  );
+}
 .skill-progress {
   background-color: #fffff5;
   border: 2px solid black;
@@ -580,23 +755,25 @@ div.scrollmenu a:hover {
 
 .skill-bar h1 {
   font-size: 4vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card-body a {
   font-size: 3.5vh;
   font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card-body p {
   font-size: 2.5vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card-img-top {
   width: 60vh;
-  height: 45vh;
+  height: 30vh;
+  padding: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #project-github-link {
@@ -605,9 +782,9 @@ div.scrollmenu a:hover {
   border: 1px solid black;
   border-radius: 10px;
   text-decoration: none;
-  padding: 1% 1% 1% 1%;
+  padding: 3% 3% 3% 3%;
   color: black;
-  background-color: #D6E4F0;
+  background-color: #d6e4f0;
 }
 #project-github-link:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -616,16 +793,18 @@ div.scrollmenu a:hover {
 .label {
   width: 60px;
   height: 26px;
-  background-color:#111;
+  background-color: #111;
   display: flex;
-  border-radius:50px;
+  border-radius: 50px;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
   position: relative;
   transform: scale(1.5);
-/* box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px; */
-box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px; */
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
+    rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
 }
 .ball {
   width: 20px;
@@ -636,9 +815,8 @@ box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 
   left: 2px;
   border-radius: 50%;
   transition: transform 0.2s linear;
-
 }
-.checkbox:checked + .label .ball{
+.checkbox:checked + .label .ball {
   transform: translateX(35px);
 }
 
