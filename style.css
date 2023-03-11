@@ -86,7 +86,9 @@ body {
   opacity: 0.8;
   margin-left: 3px;
 }
-
+#nav-icon {
+  margin-right: 20px;
+}
 #profile {
   padding: 37vh 2rem 12rem 5rem;
 }
@@ -852,4 +854,30 @@ div.scrollmenu a:hover {
 .checkbox {
   opacity: 0;
   position: absolute;
+}
+.contact-form-div {
+  display: inline;
+  padding-top: 10%;
+  overflow-y: hidden;
+}
+#form-btn {
+  background-color: #8ec5fc;
+  font-size: x-large;
+  font-weight: 600;
+  width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#download-resume {
+  width: 50%;
+  font-size: 2rem;
+  color: #163172;
+  border: 3px solid #163172;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#copyright {
+  text-align: center;
+  color: #163172;
+  font-size: 2vh;
+  font-family: "Courier Prime", monospace;
 }

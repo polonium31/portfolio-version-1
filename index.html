@@ -40,20 +40,20 @@
           <div class="collapse navbar-collapse " id="navbarResponsive">
             <ul class="navbar-nav ml-auto" id="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#educaion-section"><i class="fas fa-university"></i> Education</a>
+                <a class="nav-link" href="#educaion-section"><i class="fas fa-university" id="nav-icon"></i>Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#experience-section"><i class="fas fa-laptop"></i> Experience</a>
+                <a class="nav-link" href="#experience-section"><i class="fas fa-laptop" id="nav-icon"></i>Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills-section"><i class="fas fa-chart-pie"></i> Skills</a>
+                <a class="nav-link" href="#skills-section"><i class="fas fa-chart-pie" id="nav-icon"></i>Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects-section"><i class="fas fa-file-code"></i> Projects</a>
+                <a class="nav-link" href="#projects-section"><i class="fas fa-file-code" id="nav-icon"></i>Projects</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#contact-section"><i class="fas fa-mobile-alt"></i> Contact</a>
+                <a class="nav-link" href="#contact-section"><i class="fas fa-mobile-alt" id="nav-icon"></i>Contact</a>
               </li>
 
             </ul>
@@ -68,8 +68,8 @@
             <p id="instruction">Click My name to Download Resume </p>
           </div>
           <h6 id="intro">Welcome to my Portfolio website</h6>
-          <a href="#about" id="name-link">
-          <h1 id="name"><a href="images/Jainish Patel.pdf" style="text-decoration:none;color: inherit;"  data-toggle="tooltip" data-placement="left" title="Download Resume">Jainish Patel</a></h1>
+          <a href="#about" id="name-link" target="_blank">
+          <h1 id="name"><a href="images/Jainish_Patel.pdf" style="text-decoration:none;color: inherit;" target="_blank" data-toggle="tooltip" data-placement="left" title="Download Resume">Jainish Patel</a></h1>
           </a>
           <h2 id="descri">a Developer, a Student and a Thinker</h2>
 
@@ -572,8 +572,8 @@
       <div class="container-fluid" id="contact-section">
         <h1 id="heading"><i class="fas fa-user-tie"></i> Contact</h1>
 
-        <div style="display:inline;padding-top:10%; overflow-y: hidden;">
-          <div id = "contact-form" class="contact-form col-lg-8 col-md-10" style="margin:5%; font-size:3vh; font-weight: 600; border:1px solid black; margin-left:12%; border-radius:10px;">
+        <div class="contact-form-div">
+          <div id = "contact-form" class="contact-form col-lg-8 col-md-10 mx-auto" style="margin:5%; font-size:3vh; font-weight: 600; border:1px solid black; margin-left:12%; border-radius:10px;">
             <form  id="gform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfrLlDlAtrNJzHMiKzUGBjKhxDTICmlPiZAOrf6WeHtJSgGIg/formResponse" method="post" style="padding:2% 2% 2% 2%;">
               <div class="form-group">
                 <label for="Email">Email address</label>
@@ -593,9 +593,12 @@
                  <textarea  style="font-size:2.5vh; border-radius:10px;" name="entry.68576554" class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
                 </div>
 
-              <input type="submit" class="btn btn-primary" style="font-size:2vh; border-radius:10px;"></input>
+              <input type="submit" class="btn" id="form-btn"></input>
             </form>
           </div>
+         <div class="d-flex justify-content-center">
+          <a  href="./images/Jainish_Patel.pdf" target="_blank" class="btn" id="download-resume">Download Resume <i class="fas fa-arrow-down "></i></a>
+         </div>
           <div class="image-contact">
             <img src="images/background/contact.png" style="width:60vw;">
           </div>
@@ -603,7 +606,7 @@
       </div>
 <br>
       <footer>
-        <h3 id="copyright" style="text-align:center; color:#163172; font-size:2vh; font-family: 'Courier Prime', monospace;"><i class="fas fa-code"></i> by jainish patel</h3>
+        <h3 id="copyright" ><i class="fas fa-code"></i> by jainish patel</h3>
       </footer>
 </body>
 
