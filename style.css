@@ -457,6 +457,8 @@ body {
   position: relative;
   margin-left: -10%;
   margin-right: -10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .main-timeline-4::after {
@@ -677,8 +679,10 @@ div.scrollmenu a:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .line {
-  border: 1px solid rgb(164, 164, 164);
-  margin-top: 8%;
+  margin-top: 1cm;
+}
+#tech-title {
+  font-size: 2.5vh;
 }
 #tech {
   margin: 10px;
