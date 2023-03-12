@@ -667,6 +667,7 @@ div.scrollmenu a:hover {
   border: 2px solid black;
   border-radius: 10px;
   text-decoration: none;
+  margin-bottom: 10%;
   padding: 3% 3% 3% 3%;
   color: black;
   background-color: #8ec5fc;
@@ -675,11 +676,12 @@ div.scrollmenu a:hover {
 #project-github-link:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-.tech-div {
+.line {
+  border: 1px solid rgb(164, 164, 164);
+  margin-top: 8%;
 }
 #tech {
-  margin: 5px;
+  margin: 10px;
   font-size: 2.5vh;
 }
 .label {
