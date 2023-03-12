@@ -15,13 +15,13 @@ function change_to_dark() {
     document.getElementById("name").style.animation =
       " glow 1s ease-in-out infinite alternate";
     document.getElementById("hamburger").style.color = "white";
-
+    document.getElementById("download-resume").style.color = "#c9c8c7";
+    document.getElementById("download-resume").style.borderColor = "#c9c8c7";
     document.getElementById("copyright").style.color = "white";
     document.getElementById("gform").style.color = "#c9c8c7";
     document.getElementById("contact-form").style.boxShadow =
       "rgba(255, 255, 255, 0.05) 0px 1px 0px, rgba(255, 255, 255, 0.1) 0px 0px 8px";
     document.getElementById("hamburger").style.borderColor = "white";
-
     var el = document.querySelectorAll("#heading");
 
     for (var i = 0; i < el.length; i++) {
@@ -57,7 +57,7 @@ function change_to_dark() {
 
     for (var i = 0; i < el.length; i++) {
       var currentEl = el[i];
-      currentEl.style.backgroundColor = "#003ab8";
+      currentEl.style.backgroundColor = "#052872";
       currentEl.style.boxShadow =
         "rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset";
       currentEl.style.color = "white";
@@ -97,6 +97,13 @@ function change_to_dark() {
       var currentEl = el[i];
       currentEl.style.color = "white";
     }
+    var el = document.querySelectorAll("#progress");
+
+    for (var i = 0; i < el.length; i++) {
+      var currentEl = el[i];
+      currentEl.style.boxShadow = "rgba(255, 255, 255, 0.24) 0px 3px 8px;";
+    }
+
     const css = window.document.styleSheets[0];
     css.insertRule(
       `@-webkit-keyframes glow {
