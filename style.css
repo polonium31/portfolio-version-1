@@ -261,13 +261,14 @@ body {
 }
 
 /* education section */
-.education {
-  background-color: #fffefc;
+.educaion-section {
+  background: #ffaa00;
 }
 
 #school-section {
-  padding-top: 10%;
+  padding-top: 4%;
   margin-bottom: 10%;
+  justify-content: space-evenly;
 }
 
 #school-animation[data-scroll="in"] {
@@ -354,181 +355,8 @@ body {
   }
 }
 
-.school {
-  border: 2px solid #163172;
-  border-radius: 50px;
-  padding: 2rem 1rem 2rem 1rem;
-  background: #d6e4f0;
-  float: inherit;
-  margin-bottom: 5%;
-  margin-right: 5%;
-  height: 100vh;
-}
-
-.school-div {
-  text-align: center;
-  padding: 5% 10% 5% 10%;
-  font-family: "Montserrat", sans-serif;
-}
-
-#school-logo {
-  border: 2px solid black;
-  border-radius: 80%;
-  width: 15vh;
-  height: 15vh;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-bottom: 5%;
-}
-
-.wrapper {
-  display: inline;
-  margin-bottom: 15%;
-}
-
-.progress-title {
-  font-size: 3vh;
-  font-weight: 700;
-  color: #000;
-  margin: 0 0 10px;
-  font-family: "Montserrat", sans-serif;
-}
-
-#progress {
-  margin-right: 5%;
-  margin-top: 1.5%;
-  border-radius: 15px;
-}
-.progress-bar {
-  align-items: center;
-  text-align: center;
-  font-size: 2vh;
-}
-.progress .progress-bar {
-  border-radius: 10px;
-  box-shadow: none;
-  width: 0;
-  background-color: #1e56a0;
-}
-.progress .progress-value {
-  font-size: 0.7cm;
-  font-weight: 700;
-  color: #6b7880;
-  position: absolute;
-  float: right;
-  right: 10px;
-  margin-top: 2%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-@media screen and (max-width: 400px) {
-  .progress .progress-value {
-    font-size: 2rem;
-    margin-top: 1.5%;
-  }
-}
-
-@keyframes animate-positive {
-  0% {
-    width: 0;
-  }
-}
-
-#college {
-  padding: 2rem 2rem 2rem 2rem;
-}
-
-#cgpa-div {
-  width: 90%;
-  height: 25vh;
-  border: 2px solid black;
-  border-right: none;
-  border-bottom: none;
-  display: flex;
-  transform: rotateX(180deg);
-}
-
-#cgpa {
-  display: flex;
-  margin-left: 2%;
-  height: 23vh;
-}
-
-#bar {
-  margin-right: 7%;
-  width: 5vh;
-  border-radius: 3px;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  background: #163172;
-  margin-right: 25px;
-}
-
-#bar:hover {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-
-#cgpa-marks-div {
-  display: flex;
-  margin-left: 2%;
-  margin-bottom: 2%;
-  font-size: 1.3rem;
-}
-
-#cgpa-marks {
-  margin-right: 4%;
-  transform: rotate(310deg);
-}
-
-#cgpa-sem-div {
-  display: flex;
-  margin-left: 5%;
-  margin-top: 2%;
-  font-size: 2.8vh;
-}
-
-#sem {
-  transform: rotateX(180deg);
-  color: white;
-  text-align: center;
-}
-
-#cgpa-marks-1 {
-  margin-right: 8%;
-}
-
-.sem-1 {
-  height: 80.71%;
-}
-
-.sem-2 {
-  height: 90.24%;
-}
-
-.sem-3 {
-  height: 100%;
-}
-
-.sem-4 {
-  height: 90.64%;
-}
-
-.sem-5 {
-  height: 90.76%;
-}
-
-.sem-6 {
-  height: 100%;
-}
-.sem-7 {
-  height: 90.7%;
-}
-
 /* Experience */
 #experience-section {
-  /* background: linear-gradient(270deg, #ffffff, #80c8ff, #3b87c1); */
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 
@@ -574,7 +402,54 @@ body {
     background-position: 0% 50%;
   }
 }
-
+#edu-card {
+  border: 2px solid black;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background: #d6e4f0;
+}
+#info {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 7vh;
+}
+#card-title {
+  margin-top: 2%;
+  font-size: 3vh;
+  font-weight: 600;
+}
+#card-text {
+  font-size: 2vh;
+}
+#school-image {
+  width: 18vh;
+  height: 15vh;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#progress {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.progress .progress-bar {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: none;
+  background-color: #1e56a0;
+}
+.progress-bar {
+  font-size: 2vh;
+}
+#sgpa-div {
+  text-align: center;
+}
+#sgpa {
+  background-color: #1e56a0;
+  font-size: 2vh;
+  color: #ffffff;
+  margin: 2% 2% 2% 2%;
+}
 .main-timeline-4 {
   position: relative;
 }
@@ -794,9 +669,7 @@ div.scrollmenu a:hover {
 #project-github-link:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.line {
-  margin-top: 10%;
-}
+
 .tech-div {
 }
 #tech {

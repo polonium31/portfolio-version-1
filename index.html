@@ -129,122 +129,96 @@
   <hr>
   <div id="educaion-section">
     <h1 id="heading" style="margin-bottom:0;"><i class="fas fa-university fa-1x"></i> Education</h1>
-    <div class="container-fluid" id="school-section" style="padding:2% 2% 2% 2%;">
-      <div class="row">
-
-        <div class="col-lg-6">
-          <div class="school" id="school-animation" style="margin-left:3%;">
-            <div class="school-div">
-              <img src="images/logos/school-logo.png" alt="logo" class="rounded mx-auto d-block" id="school-logo" style="margin-top:5%;">
-              <h3 class="progress-title">Divine Life School</h3>
-              <p style="font-size:2vh;">Crucial Exams of my life secondary and Higher secondary I had given under this school.</p>
+    <div class="row d-flex justify-content-center" id="project-card-div">
+      <div class="col-lg-5 col-sm-11 mb-4" style="padding: 5% 2% 0% 2%;" id="school-animation">
+        <div class="card h-100" id="edu-card">
+          <div class="card-body">
+            <div id="info">
+              <img src="./images/logos/school-logo.png" alt="school-logo" id="school-image">
+              <h4 class="card-title" id="card-title">
+                Divine Life School
+              </h4>
+              <p class="card-text" id="card-text">Crucial Exams of my life secondary and Higher secondary I had given under this school.</p>
             </div>
-
+           <div>
             <div class="wrapper">
-              <h3 class="progress-title">10th</h3>
-              <div class="progress" style="height: 40px;" id="progress">
-                <div class="progress-bar" style="width: 91.71%;  height: 40px;">
-                    91.71%
-                </div>
-            </div>
-            <br>
+              <h3 class="progress-title" id="card-title">10th</h3>
+                <div class="progress" style="height: 4vh;" id="progress">
+                  <div class="progress-bar" style="width: 91.71%;  height: 4vh;">
+                      91.71%
+                  </div>
+              </div>
             </div>
             <div class="wrapper">
-              <h3 class="progress-title">12th</h3>
-              
-                <div class="progress" style="height: 40px;" id="progress">
-                  <div class="progress-bar" style="width: 53%;  height: 40px;">
+              <h3 class="progress-title" id="card-title">12th</h3>
+                <div class="progress" style="height: 4vh;" id="progress">
+                  <div class="progress-bar" style="width: 53%;  height: 4vh;">
                       53.75%
                   </div>
               </div>
             </div>
-
+           </div>
             <br>
-            <hr>
-
-            <div class="school-div" style="text-align:left;">
-              <h4 style="font-weight:bolder;font-size:3.5vh;">Student of</h4>
-              <p style="font-size:2.5vh;">Physics, Chemistry, Math & Computer Science</p>
-            </div>
-          </div>
-
-        </div>
-
-        <script type="text/javascript">
-          ScrollOut({
-            targets: '.progress-bar,#school-animation'
-          })
-        </script>
-        <div class="col-lg-6" id="college-animation">
-          <div class="school" id="school-animation" style="margin-left:3%;">
-            <div class="school-div" style="margin-bottom:-8%; margin-top:5%;">
-              <img src="images/logos/uni.png" alt="logo" class="rounded mx-auto d-block" id="school-logo" style="width: 200px;height:90px;">
-              <h3 class="progress-title">Indus University</h3>
-              <p style="font-size:2vh;">Currently pursuing my B.Tech degree with Electronics as minors.</p>
-            </div>
-            <br>
-
-            <div id="cgpa-marks-div" style="padding-top:5%;">
-              <div id="cgpa-marks">8.71</div>
-              <div id="cgpa-marks">9.24</div>
-              <div id="cgpa-marks">10.00</div>
-              <div id="cgpa-marks">9.64</div>
-              <div id="cgpa-marks">9.76</div>
-              <div id="cgpa-marks">10.00</div>
-              <div id="cgpa-marks">9.70</div>
-            </div>
-            <div id="cgpa-div">
-
-              <div id="cgpa">
-
-                <div class="sem-1" id="bar">
-                  <p id="sem" style="font-size:3vh;">1</p>
-                </div>
-                <div class="sem-2" id="bar">
-                  <p id="sem" style="font-size:3vh;">2</p>
-                </div>
-                <div class="sem-3" id="bar">
-                  <p id="sem" style="font-size:3vh;">3</p>
-                </div>
-                <div class="sem-4" id="bar">
-                  <p id="sem" style="font-size:3vh;">4</p>
-                </div>
-                 <div class="sem-5" id="bar">
-                  <p id="sem" style="font-size:3vh;">5</p>
-                </div>
-                 <div class="sem-6" id="bar">
-                  <p id="sem" style="font-size:3vh;">6</p>
-                </div>
-                <div class="sem-7" id="bar">
-                  <p id="sem" style="font-size:3vh;">7</p>
-                </div>
-                <!-- <div class="sem-8" id="bar">
-                  <p id="sem" style="font-size:3vh;">7</p>
-                </div> -->
-               
-              </div>
-            </div>
-
-            <div style="text-align:center; margin-left:-15%; padding-top:2%; font-size:2vh;"> <strong>Semesters</strong></div>
-
-
-            <hr>
-            <div class="school-div" style="text-align:left;">
-              <h4 style="font-weight:bolder;font-size:3.5vh;">Student of</h4>
-              <p style="font-size:2.5vh;">Computer Science Engineering<br><strong>CGPA: 9.67 / 10</strong></p>
+            <hr class="line">
+            <div>
+              <h4 class="card-title" id="card-title">
+                Student of
+              </h4>
+              <p class="card-text" id="card-text">Physics, Chemistry, Math & Computer Science</p>
             </div>
           </div>
         </div>
-        <script type="text/javascript">
-          ScrollOut({
-            targets: '#college-animation'
-          })
-        </script>
       </div>
-
+      <script type="text/javascript">
+        ScrollOut({
+          targets: '#school-animation'
+        })
+      </script>
+      <div class="col-lg-5 col-sm-11 mb-4" style="padding: 5% 2% 0% 2%;" id="college-animation">
+        <div class="card h-100" id="edu-card">
+          <div class="card-body">
+            <div id="info">
+              <img src="./images/logos/uni.png" style="width: 25vh; height: 10vh;" alt="school-logo" id="school-image">
+              <h4 class="card-title" id="card-title">
+                Indus University
+              </h4>
+              <p class="card-text" id="card-text">Currently pursuing my B.Tech degree with Electronics as minors.</p>
+            </div>
+           <div id="sgpa-main-div">
+            <h4 class="card-title" id="card-title">
+             SGPA:
+            </h4>
+          <div id="sgpa-div">
+            <button  class="btn" id="sgpa">Sem 1: 8.71</button>
+            <button  class="btn" id="sgpa">Sem 2: 9.78</button>
+            <button  class="btn" id="sgpa">Sem 3: 10.00</button>
+            <button  class="btn" id="sgpa">Sem 4: 9.64</button>
+            <button  class="btn" id="sgpa">Sem 5: 9.76</button>
+            <button  class="btn" id="sgpa">Sem 6: 10.00</button>
+            <button  class="btn" id="sgpa">Sem 7: 9.70</button>
+            <button  class="btn" id="sgpa">Sem 8: currently</button>
+          </div>
+           </div>
+            <br>
+            <hr class="line">
+            <div>
+              <h4 class="card-title" id="card-title">
+                Student of
+              </h4>
+              <p class="card-text" id="card-text">Computer Science Engineering<br><strong>CGPA: 9.67 / 10</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        ScrollOut({
+          targets: '#college-animation'
+        })
+      </script>
     </div>
-    <div id="experience-section" class="container-fluid">
-    
+  </div>
+  
+    <div id="experience-section" class="container-fluid">  
           <h1 id="heading"><i class="fas fa-laptop"></i> Experience</h1>
           <div class="container py-5">
             <div class="main-timeline-4 text-white">

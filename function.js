@@ -44,7 +44,7 @@ function change_to_dark() {
       currentEl.style.backgroundColor = "#031980";
     }
 
-    var el = document.querySelectorAll("#school-animation");
+    var el = document.querySelectorAll("#edu-card");
 
     for (var i = 0; i < el.length; i++) {
       var currentEl = el[i];
@@ -102,6 +102,12 @@ function change_to_dark() {
     for (var i = 0; i < el.length; i++) {
       var currentEl = el[i];
       currentEl.style.boxShadow = "rgba(255, 255, 255, 0.24) 0px 3px 8px;";
+    }
+    var el = document.querySelectorAll("#sgpa");
+
+    for (var i = 0; i < el.length; i++) {
+      var currentEl = el[i];
+      currentEl.style.boxShadow = "rgba(255, 255, 255, 0.24) 0px 5px 15px";
     }
 
     const css = window.document.styleSheets[0];
