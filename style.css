@@ -362,6 +362,7 @@ body {
   float: inherit;
   margin-bottom: 5%;
   margin-right: 5%;
+  height: 100vh;
 }
 
 .school-div {
@@ -381,7 +382,7 @@ body {
 
 .wrapper {
   display: inline;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .progress-title {
@@ -392,34 +393,22 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.progress-outer {
-  background: #fff;
-  padding: 5px 100px 5px 10px;
-  border: 1px solid #bebfbf;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  position: relative;
-  height: auto;
-  overflow-y: auto;
-  padding-bottom: 2%;
-}
-
-.progress {
-  background: #bebfbf;
-  border-radius: 20px;
-  margin: 0;
+#progress {
   margin-right: 5%;
   margin-top: 1.5%;
+  border-radius: 15px;
 }
-
+.progress-bar {
+  align-items: center;
+  text-align: center;
+  font-size: 2vh;
+}
 .progress .progress-bar {
   border-radius: 10px;
-  height: 15px;
   box-shadow: none;
   width: 0;
   background-color: #1e56a0;
 }
-
 .progress .progress-value {
   font-size: 0.7cm;
   font-weight: 700;
@@ -467,7 +456,7 @@ body {
 
 #bar {
   margin-right: 7%;
-  width: 3.5vh;
+  width: 5vh;
   border-radius: 3px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -485,11 +474,11 @@ body {
   display: flex;
   margin-left: 2%;
   margin-bottom: 2%;
-  font-size: 2vh;
+  font-size: 1.3rem;
 }
 
 #cgpa-marks {
-  margin-right: 3%;
+  margin-right: 4%;
   transform: rotate(310deg);
 }
 
@@ -792,7 +781,7 @@ div.scrollmenu a:hover {
 }
 
 #project-github-link {
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: 400;
   border: 2px solid black;
   border-radius: 10px;
@@ -812,7 +801,7 @@ div.scrollmenu a:hover {
 }
 #tech {
   margin: 5px;
-  font-size: 1.5rem;
+  font-size: 2.5vh;
 }
 .label {
   width: 60px;
