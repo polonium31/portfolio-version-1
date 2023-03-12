@@ -34,26 +34,27 @@
         <div class="container-fluid">
           <a class="navbar-brand" style="font-size:2vh; margin-top:1%;"><img src="images/logos/1.png" onmouseover="this.src='images/logos/2.png'" onmouseout="this.src='images/logos/1.png'" alt="Logo" id="logo-image"></a>
 
-          <button id="hamburger" style="color:black; border:2px solid black; width:12vh;font-size:2vh; text-align: center;margin-right:5%;" class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">☰ Menu
+          <button id="hamburger" class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-6x"></i> 
           </button>
           <div class="collapse navbar-collapse " id="navbarResponsive">
             <ul class="navbar-nav ml-auto" id="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#educaion-section"><i class="fas fa-university" id="nav-icon"></i>Education</a>
+                <a class="nav-link" href="#educaion-section"><i class="fas fa-university" id="nav-icon"></i> Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#experience-section"><i class="fas fa-laptop" id="nav-icon"></i>Experience</a>
+                <a class="nav-link" href="#experience-section"><i class="fas fa-laptop" id="nav-icon"></i> Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills-section"><i class="fas fa-chart-pie" id="nav-icon"></i>Skills</a>
+                <a class="nav-link" href="#skills-section"><i class="fas fa-chart-pie" id="nav-icon"></i> Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects-section"><i class="fas fa-file-code" id="nav-icon"></i>Projects</a>
+                <a class="nav-link" href="#projects-section"><i class="fas fa-file-code" id="nav-icon"></i> Projects</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#contact-section"><i class="fas fa-mobile-alt" id="nav-icon"></i>Contact</a>
+                <a class="nav-link" href="#contact-section"><i class="fas fa-mobile-alt" id="nav-icon"></i> Contact</a>
               </li>
 
             </ul>
@@ -223,8 +224,8 @@
           <div class="container py-5">
             <div class="main-timeline-4 text-white">
               <div class="timeline-4 left-4">
-                <div class="card gradient-custom">
-                  <div class="card-body p-4">
+                <div class="card gradient-custom" id="exp-content">
+                  <div class="card-body p-4" >
                     <h2><strong>In-House Internship</strong></h2>
                     <h3>Org: Indus University</h3>
                     <h4 class="date-exp"><i class="fas fa-calendar fa-x mb-3"></i> June 2022 - Aug 2022</h4>
@@ -239,8 +240,8 @@
                 </div>
               </div>
               <div class="timeline-4 right-4">
-                <div class="card gradient-custom-4">
-                  <div class="card-body p-4">
+                <div class="card gradient-custom-4" id="exp-content">
+                  <div class="card-body p-4" >
                     <h2><strong>TECHNICAL CONTENT WRITER</strong></h2>
                     <h3>Org: Coding Ninjas</h3>
                     <h4 class="date-exp"><i class="fas fa-calendar fa-x mb-3"></i> Dec 2021 - Jan 2022</h4>
@@ -255,8 +256,8 @@
                 </div>
               </div>
               <div class="timeline-4 left-4">
-                <div class="card gradient-custom">
-                  <div class="card-body p-4">
+                <div class="card gradient-custom" id="exp-content">
+                  <div class="card-body p-4" >
                     <h2><strong>TEACHING ASSISTANT</strong></h2>
                     <h3>Org: Coding Ninjas</h3>
                     <h4 class="date-exp"><i class="fas fa-calendar fa-x mb-3"></i> Sept 2021 - Jan 2022</h4>
@@ -349,7 +350,7 @@
       <h1 id="heading"><i class="fas fa-file-code"></i> Projects</h1>
       <p style="color:red; font-size:2.5vh; padding: 3% 0 0% 0;">*Blue/red color text are the link to the project.</p>
       <div class="row d-flex justify-content-center" id="project-card-div">
-        <div class="col-lg-5 col-sm-12 mb-4" style="padding: 5% 2% 0% 2%;">
+        <div class="col-lg-5 col-sm-11 mb-4" style="padding: 5% 2% 0% 2%;">
           <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/react projects/indusuniapp.png" alt="">
             <div class="card-body">
@@ -362,7 +363,7 @@
                 <a id="project-github-link" href="https://github.com/polonium31/jainish_blog" target="_blank">Github Link</a>
               <hr class="line">
                 <div class="tech-div">
-                  <h3>Tech stack: </h3>
+                  <h3 id="tech">Techstack: </h3>
                   <button type="button" class="btn btn-info" id="tech">React.js</button>
                   <button type="button" class="btn btn-info" id="tech">React.native</button>
                   <button type="button" class="btn btn-info" id="tech">Firebase</button>
@@ -371,7 +372,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-sm-12 mb-4" style="padding: 5% 2% 0% 2%;">
+        <div class="col-lg-5 col-sm-11 mb-4" style="padding: 5% 2% 0% 2%;">
           <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/react projects/creator-it.png" alt="">
             <div class="card-body">
@@ -383,7 +384,7 @@
               <a id="project-github-link" href="https://github.com/polonium31/creator_it" target="_blank">Github Link</a>
               <hr class="line">
               <div class="tech-div">
-                <h3>Tech stack: </h3>
+                <h3 id="tech">Techstack: </h3>
                 <button type="button" class="btn btn-info" id="tech">React.js</button>
                 <button type="button" class="btn btn-info" id="tech">Django</button>
                 <button type="button" class="btn btn-info" id="tech">PostgresSQL</button>
@@ -392,7 +393,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-sm-12 mb-4" style="padding: 5% 2% 0% 2%;">
+        <div class="col-lg-5 col-sm-11 mb-4" style="padding: 5% 2% 0% 2%;">
           <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/react projects/slpatel.png" alt="">
             <div class="card-body">
@@ -405,7 +406,7 @@
               <a id="project-github-link" href="https://github.com/polonium31/creator_it" target="_blank">Github Link</a>
               <hr class="line">
               <div class="tech-div">
-                <h3>Tech stack: </h3>
+                <h3 id="tech">Techstack: </h3>
                 <button type="button" class="btn btn-info" id="tech">React.js</button>
                 <button type="button" class="btn btn-info" id="tech">Hostinger</button>
                 <button type="button" class="btn btn-info" id="tech">bootstrap</button>
@@ -413,7 +414,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-sm-12 mb-4" style="padding: 5% 2% 0% 2%;">
+        <div class="col-lg-5 col-sm-11 mb-4" style="padding: 5% 2% 0% 2%;">
           <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/flask/blog.png" alt="">
             <div class="card-body">
@@ -425,7 +426,7 @@
               <a id="project-github-link" href="https://github.com/polonium31/jainish_blog" target="_blank">Github Link</a>
               <hr class="line">
               <div class="tech-div">
-                <h3>Tech stack: </h3>
+                <h3 id="tech">Techstack: </h3>
                 <button type="button" class="btn btn-info" id="tech">HTML</button>
                 <button type="button" class="btn btn-info" id="tech">CSS</button>
                 <button type="button" class="btn btn-info" id="tech">JavaScript</button>
@@ -435,7 +436,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
+        <div class="col-lg-5 col-sm-11 mb-4" style="  padding: 5% 2% 0% 2%;">
           <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/flask/movies.png" alt="">
             <div class="card-body">
@@ -447,7 +448,7 @@
               <a id="project-github-link" href="https://github.com/polonium31/top-100-movies-of-all-time" target="_blank">GitHub Link</a>
               <hr class="line">
               <div class="tech-div">
-                <h3>Tech stack: </h3>
+                <h3 id="tech">Techstack: </h3>
                 <button type="button" class="btn btn-info" id="tech">HTML</button>
                 <button type="button" class="btn btn-info" id="tech">CSS</button>
                 <button type="button" class="btn btn-info" id="tech">JavaScript</button>
@@ -458,7 +459,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
+        <div class="col-lg-5 col-sm-11 mb-4" style="  padding: 5% 2% 0% 2%;">
           <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/flask/api.png" alt="">
             <div class="card-body">
@@ -472,14 +473,14 @@
                 <a id="project-github-link" href="https://github.com/polonium31/sucides_in_india_api" target="_blank">GitHub Link</a>
               <hr class="line">
               <div class="tech-div">
-                <h3>Tech stack: </h3>
+                <h3 id="tech">Techstack: </h3>
                 <button type="button" class="btn btn-info" id="tech">Flask</button>
                 <button type="button" class="btn btn-info" id="tech">Python</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
+        <div class="col-lg-5 col-sm-11 mb-4" style="  padding: 5% 2% 0% 2%;">
           <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/core python/password.jpg" alt="">
             <div class="card-body">
@@ -491,14 +492,14 @@
               <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/GUI/password_generator" target="_blank">GitHub Link</a>
               <hr class="line">
               <div class="tech-div">
-                <h3>Tech stack: </h3>
+                <h3 id="tech">Techstack: </h3>
                 <button type="button" class="btn btn-info" id="tech">Python</button>
                 <button type="button" class="btn btn-info" id="tech">Tkinter</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
+        <div class="col-lg-5 col-sm-11 mb-4" style="  padding: 5% 2% 0% 2%;">
           <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
             <img class="card-img-top" src="images/core python/us-states.jpg" alt="">
             <div class="card-body">
@@ -510,30 +511,9 @@
               <a id="project-github-link" href="https://github.com/polonium31/python_projects/tree/master/APP/Game/us_states" target="_blank">GitHub Link</a>
               <hr class="line">
               <div class="tech-div">
-                <h3>Tech stack: </h3>
+                <h3 id="tech">Techstack: </h3>
                 <button type="button" class="btn btn-info" id="tech">Python</button>
                 <button type="button" class="btn btn-info" id="tech">Tkinter</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 col-sm-12 mb-4" style="  padding: 5% 2% 0% 2%;">
-          <div class="card h-100" id="card" style="border:2px solid black; border-radius:10px;box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
-            <img class="card-img-top" src="images/front-end/tindog.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">
-                <a id="project-link" href="https://polonium31.github.io/TinDog-Start-Here/" target="_blank">TinDog</a>
-              </h4>
-              <p class="card-text">Puppy Love is a dating app specifically designed for dogs and their owners to connect with other dogs and their owners in their local area.</p>
-              <br>
-              <a id="project-github-link" href="https://github.com/polonium31/TinDog-Start-Here" target="_blank">GitHub Link</a>
-              <hr class="line">
-              <div class="tech-div">
-                <h3>Tech stack: </h3>
-                <button type="button" class="btn btn-info" id="tech">React.js</button>
-                <button type="button" class="btn btn-info" id="tech">React.native</button>
-                <button type="button" class="btn btn-info" id="tech">Firebase</button>
-                <button type="button" class="btn btn-info" id="tech">bootstrap</button>
               </div>
             </div>
           </div>
