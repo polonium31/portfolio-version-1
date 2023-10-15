@@ -1,5 +1,11 @@
-# Portfolio
+# Portfolio version 1
 
-## [Website link](https://polonium31.github.io/Portfolio/)
+## Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+
+## [Website link](https://polonium31.github.io/portfolio-version-1/)
 
 ![image](images/website-overview/dark-mode.png)
